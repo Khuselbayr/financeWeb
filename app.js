@@ -24,7 +24,30 @@ return{
 //санхүү
 var FinanceController = (function(){
 
+var Income = function(id , descrebtion , value){
+this.id = id;
+this.descrebtion = descrebtion;
+this.value = value;
+}
+
+var Expense = function(id , descrebtion , value){
+    this.id = id;
+    this.descrebtion = descrebtion;
+    this.value = value;
+    }
+   var Data ={
+        allItem : {
+        inc : [],
+        exp : []
+       },
+       spend : {
+inc : 0,
+exp : 0
+       }
+   }
+
 })();
+
 //программ холбох
 var AppController =(function(FinanceController,IuController){
 
